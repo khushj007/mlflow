@@ -7,4 +7,12 @@ stages:
       - mlflow/dataset.py
       - data/raw
     outs:
+      - data/interim
+
+  features:
+    cmd: python3 mlflow/features.py
+    deps:
+      - mlflow/features.py
+      - data/interim
+    outs:
       - data/processed

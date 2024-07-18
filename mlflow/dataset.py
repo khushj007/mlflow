@@ -23,7 +23,7 @@ def main():
     home_dir = pathlib.Path(__file__).parent.parent
     data_path = home_dir / "data"/ "raw"
     params_file = home_dir / "params.yaml"
-    save_path = home_dir / "data" / "processed"
+    save_path = home_dir / "data" / "interim"
 
     params = yaml.safe_load(open(params_file))["dataset"]
 

@@ -10,14 +10,32 @@ stages:
       nfiles: 3
     - path: mlflow/dataset.py
       hash: md5
-      md5: c1851a67489fe68cac204eefe4bd2e44
-      size: 876
+      md5: 222db1deea583e5119e90a8a677dccae
+      size: 873
     params:
       params.yaml:
         dataset.split: 0.2
     outs:
-    - path: data/processed
+    - path: data/interim
       hash: md5
-      md5: 4ee3ae627683a5efd93aaef08b730adc.dir
+      md5: 047dd123207b475eb46604679ee6d7eb.dir
       size: 5172
       nfiles: 2
+  features:
+    cmd: python3 mlflow/features.py
+    deps:
+    - path: data/interim
+      hash: md5
+      md5: 047dd123207b475eb46604679ee6d7eb.dir
+      size: 5172
+      nfiles: 2
+    - path: mlflow/features.py
+      hash: md5
+      md5: f36893bd0db85845094f60b793df35e4
+      size: 727
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: cb83607d17a0d5126b0db1d42e2e9a13.dir
+      size: 2622
+      nfiles: 1
