@@ -1,0 +1,10 @@
+stages:
+  dataset:
+    cmd: python3 mlflow/dataset.py
+    params:
+      - dataset.split
+    deps:
+      - mlflow/dataset.py
+      - data/raw
+    outs:
+      - data/processed

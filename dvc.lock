@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  dataset:
+    cmd: python3 mlflow/dataset.py
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 6eaa29480b40110a6a6fcaa6659e6230.dir
+      size: 11255
+      nfiles: 3
+    - path: mlflow/dataset.py
+      hash: md5
+      md5: c1851a67489fe68cac204eefe4bd2e44
+      size: 876
+    params:
+      params.yaml:
+        dataset.split: 0.2
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 4ee3ae627683a5efd93aaef08b730adc.dir
+      size: 5172
+      nfiles: 2
