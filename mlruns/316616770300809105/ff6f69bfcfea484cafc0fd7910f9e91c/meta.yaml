@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/ff6f69bfcfea484cafc0fd7910f9e91c/artifacts
+deleted_time: 1721326174652
+end_time: 1721325523760
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: ff6f69bfcfea484cafc0fd7910f9e91c
+run_name: rare-croc-480
+run_uuid: ff6f69bfcfea484cafc0fd7910f9e91c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325505520
+status: 3
+tags: []
+user_id: HCjoshi

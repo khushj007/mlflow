@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/0c17532e043143d9bc72b4da71b7d9fd/artifacts
+deleted_time: 1721326174414
+end_time: 1721325826681
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 0c17532e043143d9bc72b4da71b7d9fd
+run_name: respected-chimp-646
+run_uuid: 0c17532e043143d9bc72b4da71b7d9fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325791885
+status: 3
+tags: []
+user_id: HCjoshi

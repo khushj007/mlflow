@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/192e65c359a14e7abc6d7d7337256a57/artifacts
+deleted_time: 1721326174736
+end_time: 1721325299324
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 192e65c359a14e7abc6d7d7337256a57
+run_name: overjoyed-fox-533
+run_uuid: 192e65c359a14e7abc6d7d7337256a57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325279013
+status: 3
+tags: []
+user_id: HCjoshi

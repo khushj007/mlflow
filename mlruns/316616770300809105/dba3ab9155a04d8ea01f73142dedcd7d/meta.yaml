@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/dba3ab9155a04d8ea01f73142dedcd7d/artifacts
+deleted_time: 1721326174711
+end_time: 1721325449804
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: dba3ab9155a04d8ea01f73142dedcd7d
+run_name: respected-vole-979
+run_uuid: dba3ab9155a04d8ea01f73142dedcd7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325431431
+status: 3
+tags: []
+user_id: HCjoshi

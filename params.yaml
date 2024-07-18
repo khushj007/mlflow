@@ -1,2 +1,4 @@
 dataset:
-  split: 0.2
+  split: 0.3
+model:
+  test_split: 0.2

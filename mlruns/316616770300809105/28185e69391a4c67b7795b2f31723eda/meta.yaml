@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/28185e69391a4c67b7795b2f31723eda/artifacts
+deleted_time: 1721326161024
+end_time: 1721325647369
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 28185e69391a4c67b7795b2f31723eda
+run_name: judicious-sponge-110
+run_uuid: 28185e69391a4c67b7795b2f31723eda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325616457
+status: 3
+tags: []
+user_id: HCjoshi

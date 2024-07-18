@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/5828c9c1ffbb4a7692c6d0944c4e9e8a/artifacts
+end_time: 1721326278626
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: active
+run_id: 5828c9c1ffbb4a7692c6d0944c4e9e8a
+run_name: resilient-auk-966
+run_uuid: 5828c9c1ffbb4a7692c6d0944c4e9e8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721326249107
+status: 3
+tags: []
+user_id: HCjoshi

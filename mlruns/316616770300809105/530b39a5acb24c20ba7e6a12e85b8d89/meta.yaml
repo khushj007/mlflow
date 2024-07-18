@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/530b39a5acb24c20ba7e6a12e85b8d89/artifacts
+deleted_time: 1721326161026
+end_time: 1721325534662
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 530b39a5acb24c20ba7e6a12e85b8d89
+run_name: burly-zebra-734
+run_uuid: 530b39a5acb24c20ba7e6a12e85b8d89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325505520
+status: 3
+tags: []
+user_id: HCjoshi

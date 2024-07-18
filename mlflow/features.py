@@ -3,6 +3,7 @@ import numpy as np
 import pathlib 
 from sklearn.preprocessing import LabelEncoder
 
+
 def get_data(path):
     return pd.read_csv(path)
 
@@ -12,7 +13,7 @@ def feature_eng(df):
 
 def save_data(save_path,df):
     pathlib.Path(save_path).mkdir(parents = True, exist_ok = True)
-    df.to_csv(save_path / "test_processed.csv" , index = False)
+    df.to_csv(save_path / "train_processed.csv" , index = False)
 
 def main():
     curr_path = pathlib.Path(__file__)

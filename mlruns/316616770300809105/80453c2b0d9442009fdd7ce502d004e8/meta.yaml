@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/80453c2b0d9442009fdd7ce502d004e8/artifacts
+deleted_time: 1721326174456
+end_time: 1721325826681
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 80453c2b0d9442009fdd7ce502d004e8
+run_name: nervous-cow-823
+run_uuid: 80453c2b0d9442009fdd7ce502d004e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325791885
+status: 3
+tags: []
+user_id: HCjoshi

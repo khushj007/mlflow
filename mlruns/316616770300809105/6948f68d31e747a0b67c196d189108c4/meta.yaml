@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/6948f68d31e747a0b67c196d189108c4/artifacts
+deleted_time: 1721326174525
+end_time: 1721325534301
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 6948f68d31e747a0b67c196d189108c4
+run_name: stylish-boar-1000
+run_uuid: 6948f68d31e747a0b67c196d189108c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325505520
+status: 3
+tags: []
+user_id: HCjoshi

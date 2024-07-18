@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/54b04547387c47d0a0e5952db7c5d703/artifacts
+deleted_time: 1721326174685
+end_time: 1721325449804
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 54b04547387c47d0a0e5952db7c5d703
+run_name: bedecked-mink-292
+run_uuid: 54b04547387c47d0a0e5952db7c5d703
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325431431
+status: 3
+tags: []
+user_id: HCjoshi

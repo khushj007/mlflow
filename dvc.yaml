@@ -16,3 +16,11 @@ stages:
       - data/interim
     outs:
       - data/processed
+
+  train:
+    cmd: python3 mlflow/modeling/train.py best_model
+    deps:
+      - mlflow/modeling/train.py
+      - data/processed
+    outs:
+      - models

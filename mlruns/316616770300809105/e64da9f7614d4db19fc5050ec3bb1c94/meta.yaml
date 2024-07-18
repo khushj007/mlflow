@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/e64da9f7614d4db19fc5050ec3bb1c94/artifacts
+deleted_time: 1721326174766
+end_time: 1721325310479
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: e64da9f7614d4db19fc5050ec3bb1c94
+run_name: indecisive-hog-141
+run_uuid: e64da9f7614d4db19fc5050ec3bb1c94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325279013
+status: 3
+tags: []
+user_id: HCjoshi

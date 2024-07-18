@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/a4bd0a580fad41439625855cc6b2c276/artifacts
+deleted_time: 1721326174712
+end_time: 1721325460727
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: a4bd0a580fad41439625855cc6b2c276
+run_name: unruly-boar-795
+run_uuid: a4bd0a580fad41439625855cc6b2c276
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325431431
+status: 3
+tags: []
+user_id: HCjoshi

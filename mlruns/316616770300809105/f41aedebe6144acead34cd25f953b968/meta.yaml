@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/f41aedebe6144acead34cd25f953b968/artifacts
+deleted_time: 1721326174622
+end_time: 1721325534301
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: f41aedebe6144acead34cd25f953b968
+run_name: aged-bee-117
+run_uuid: f41aedebe6144acead34cd25f953b968
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325505520
+status: 3
+tags: []
+user_id: HCjoshi

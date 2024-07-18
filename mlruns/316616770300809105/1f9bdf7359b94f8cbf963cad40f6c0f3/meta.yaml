@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/1f9bdf7359b94f8cbf963cad40f6c0f3/artifacts
+deleted_time: 1721326174415
+end_time: 1721325814190
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 1f9bdf7359b94f8cbf963cad40f6c0f3
+run_name: gregarious-pug-393
+run_uuid: 1f9bdf7359b94f8cbf963cad40f6c0f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325791885
+status: 3
+tags: []
+user_id: HCjoshi

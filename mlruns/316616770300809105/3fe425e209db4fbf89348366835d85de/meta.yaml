@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/3fe425e209db4fbf89348366835d85de/artifacts
+deleted_time: 1721326161040
+end_time: 1721325310903
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 3fe425e209db4fbf89348366835d85de
+run_name: wise-hen-450
+run_uuid: 3fe425e209db4fbf89348366835d85de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325279013
+status: 3
+tags: []
+user_id: HCjoshi

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/2a5297f6c8674a37a5fbcfe3f847064b/artifacts
+end_time: 1721326267767
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: active
+run_id: 2a5297f6c8674a37a5fbcfe3f847064b
+run_name: likeable-squid-420
+run_uuid: 2a5297f6c8674a37a5fbcfe3f847064b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721326249107
+status: 3
+tags: []
+user_id: HCjoshi

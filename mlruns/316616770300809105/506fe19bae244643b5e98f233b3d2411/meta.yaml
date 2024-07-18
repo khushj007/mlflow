@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/506fe19bae244643b5e98f233b3d2411/artifacts
+deleted_time: 1721326174684
+end_time: 1721325460727
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 506fe19bae244643b5e98f233b3d2411
+run_name: beautiful-smelt-915
+run_uuid: 506fe19bae244643b5e98f233b3d2411
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325431431
+status: 3
+tags: []
+user_id: HCjoshi

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/41932332414c4f67b07e230f087b24bb/artifacts
+end_time: 1721326267767
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: active
+run_id: 41932332414c4f67b07e230f087b24bb
+run_name: bustling-doe-317
+run_uuid: 41932332414c4f67b07e230f087b24bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721326249107
+status: 3
+tags: []
+user_id: HCjoshi

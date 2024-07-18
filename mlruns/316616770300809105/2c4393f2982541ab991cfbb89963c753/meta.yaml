@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/316616770300809105/2c4393f2982541ab991cfbb89963c753/artifacts
+deleted_time: 1721326174736
+end_time: 1721325310479
+entry_point_name: ''
+experiment_id: '316616770300809105'
+lifecycle_stage: deleted
+run_id: 2c4393f2982541ab991cfbb89963c753
+run_name: youthful-pig-464
+run_uuid: 2c4393f2982541ab991cfbb89963c753
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721325279013
+status: 3
+tags: []
+user_id: HCjoshi
