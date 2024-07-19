@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/98cd5fc00d874883b41942690d131c46/artifacts
+end_time: 1721368540950
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 98cd5fc00d874883b41942690d131c46
+run_name: chill-cat-34
+run_uuid: 98cd5fc00d874883b41942690d131c46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368540892
+status: 3
+tags: []
+user_id: HCjoshi

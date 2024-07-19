@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/74f2e214225d4a57a2a2695e92e2d9c4/artifacts
+end_time: 1721368538461
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 74f2e214225d4a57a2a2695e92e2d9c4
+run_name: peaceful-sponge-934
+run_uuid: 74f2e214225d4a57a2a2695e92e2d9c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368538407
+status: 3
+tags: []
+user_id: HCjoshi

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4729b0c63db34823bc4774c5f2e14bfd/artifacts
+end_time: 1721376032908
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4729b0c63db34823bc4774c5f2e14bfd
+run_name: welcoming-carp-764
+run_uuid: 4729b0c63db34823bc4774c5f2e14bfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721376032716
+status: 4
+tags: []
+user_id: HCjoshi

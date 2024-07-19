@@ -24,3 +24,12 @@ stages:
       - data/processed
     outs:
       - models
+
+  plots:
+    cmd: python3 mlflow/plots.py RandomForestClassifier-model.joblib
+    deps:
+      - mlflow/plots.py
+      - models
+      - data/interim
+    outs:
+      - reports/figures

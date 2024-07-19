@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/d219a6c099a24e9183df373400ca727c/artifacts
+end_time: 1721368538542
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: d219a6c099a24e9183df373400ca727c
+run_name: resilient-bear-471
+run_uuid: d219a6c099a24e9183df373400ca727c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368538469
+status: 3
+tags: []
+user_id: HCjoshi

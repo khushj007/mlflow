@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/7c77f4754e9c4b3a867e816d4a906648/artifacts
+end_time: 1721368541017
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 7c77f4754e9c4b3a867e816d4a906648
+run_name: righteous-lynx-871
+run_uuid: 7c77f4754e9c4b3a867e816d4a906648
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368540959
+status: 3
+tags: []
+user_id: HCjoshi
