@@ -33,26 +33,46 @@ def best_model(x , y):
         }
     experiment_name = sys.argv[1]
     mlflow.set_experiment(experiment_name)
-    mlflow.autolog()
+
     best_model=None
     best_score=-1
-    with mlflow.start_run() :
+    estimator_name = None
+    with mlflow.start_run() as parent :
         for i in hyperparameters:
             model = GridSearchCV(estimator=models[i](),param_grid=hyperparameters[i],scoring={
                 "accuracy":"accuracy",
                 'f1_macro': 'f1_macro'},
-                refit="f1_macro"
+                refit="f1_macro",
+                cv=10
                 ) 
+            
             model.fit(x,y)
+            
+            
+            for j in range(len(model.cv_results_["params"])):
+                with mlflow.start_run(nested=True) as child :
+                    mlflow.log_params(model.cv_results_["params"][j])
+                    mlflow.log_metric("f1_score",model.cv_results_["mean_test_f1_macro"][j])
+                    mlflow.log_metric("accuracy",model.cv_results_["mean_test_accuracy"][j])
+                    mlflow.log_param("estimator_name",i)
+
+            
+            
+            
             if model.best_score_ > best_score :
                 best_model = model.best_estimator_
                 best_score = model.best_score_
+                estimator_name = i
+        mlflow.log_params(model.best_params_)
+        mlflow.log_metric("f1_score",best_score)
+        mlflow.log_metric("accuracy",model.cv_results_["mean_test_accuracy"].max())
+        mlflow.log_param("estimator_name",estimator_name)
     
-    return best_model
+    return best_model , estimator_name
 
-def save_model(path,model):
+def save_model(path,model,estimator_name):
     pathlib.Path(path).mkdir(parents=True,exist_ok=True)
-    model_name=sys.argv[1]+"-model.joblib"
+    model_name=estimator_name+"-model.joblib"
     joblib.dump(model,path / model_name)
 
 
@@ -75,9 +95,9 @@ def main():
     X = df.drop(columns="Species")
     y = df["Species"]
 
-    model = best_model(X,y)
+    model , estimator_name = best_model(X,y)
     
-    save_model(models_path,model)
+    save_model(models_path,model,estimator_name)
 
 if __name__ == "__main__":
     main()

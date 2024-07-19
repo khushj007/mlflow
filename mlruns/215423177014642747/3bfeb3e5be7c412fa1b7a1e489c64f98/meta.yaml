@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/3bfeb3e5be7c412fa1b7a1e489c64f98/artifacts
+end_time: 1721368327713
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 3bfeb3e5be7c412fa1b7a1e489c64f98
+run_name: merciful-bear-276
+run_uuid: 3bfeb3e5be7c412fa1b7a1e489c64f98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368327648
+status: 3
+tags: []
+user_id: HCjoshi

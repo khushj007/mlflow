@@ -1,1 +1,0 @@
-{'n_estimators': [10, 15, 20], 'max_depth': [6, 8, 10], 'max_features': ['sqrt', 'log2', None]}

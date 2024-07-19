@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/385815a3cc994f62b8ba1cb8fffd20ff/artifacts
+end_time: 1721368327249
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 385815a3cc994f62b8ba1cb8fffd20ff
+run_name: invincible-mule-236
+run_uuid: 385815a3cc994f62b8ba1cb8fffd20ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368327200
+status: 3
+tags: []
+user_id: HCjoshi

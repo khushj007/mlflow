@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/3b46b63b18014742a02fa663b63b9fbc/artifacts
+end_time: 1721368327133
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 3b46b63b18014742a02fa663b63b9fbc
+run_name: nervous-duck-840
+run_uuid: 3b46b63b18014742a02fa663b63b9fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368327055
+status: 3
+tags: []
+user_id: HCjoshi

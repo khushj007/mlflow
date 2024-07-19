@@ -18,7 +18,7 @@ stages:
       - data/processed
 
   train:
-    cmd: python3 mlflow/modeling/train.py best_model
+    cmd: python3 mlflow/modeling/train.py best_model-1
     deps:
       - mlflow/modeling/train.py
       - data/processed

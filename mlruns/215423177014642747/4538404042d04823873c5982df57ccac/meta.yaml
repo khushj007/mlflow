@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/4538404042d04823873c5982df57ccac/artifacts
+end_time: 1721368327326
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 4538404042d04823873c5982df57ccac
+run_name: bald-squirrel-775
+run_uuid: 4538404042d04823873c5982df57ccac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368327258
+status: 3
+tags: []
+user_id: HCjoshi

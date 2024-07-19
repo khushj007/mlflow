@@ -40,7 +40,7 @@ stages:
       size: 2304
       nfiles: 1
   train:
-    cmd: python3 mlflow/modeling/train.py best_model
+    cmd: python3 mlflow/modeling/train.py best_model-1
     deps:
     - path: data/processed
       hash: md5
@@ -49,11 +49,11 @@ stages:
       nfiles: 1
     - path: mlflow/modeling/train.py
       hash: md5
-      md5: a38b1e78e26c399d2ef694999d1fdefe
-      size: 2135
+      md5: 170c1dc02adc9f3cd1802e3745156865
+      size: 2962
     outs:
     - path: models
       hash: md5
-      md5: 8344c2a05e10e3dae5209a1adea4e1de.dir
-      size: 13121
+      md5: 5dd038d2615a3dcdf8d5bd3715cb493e.dir
+      size: 19649
       nfiles: 1

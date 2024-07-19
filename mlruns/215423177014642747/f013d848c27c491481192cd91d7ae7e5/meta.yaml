@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/f013d848c27c491481192cd91d7ae7e5/artifacts
+end_time: 1721368327634
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: f013d848c27c491481192cd91d7ae7e5
+run_name: respected-jay-745
+run_uuid: f013d848c27c491481192cd91d7ae7e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368327573
+status: 3
+tags: []
+user_id: HCjoshi

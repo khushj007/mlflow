@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/215423177014642747/2b5b7d20590146018b1dedacbae11b2c/artifacts
+end_time: 1721368326655
+entry_point_name: ''
+experiment_id: '215423177014642747'
+lifecycle_stage: active
+run_id: 2b5b7d20590146018b1dedacbae11b2c
+run_name: charming-grouse-483
+run_uuid: 2b5b7d20590146018b1dedacbae11b2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721368326604
+status: 3
+tags: []
+user_id: HCjoshi
