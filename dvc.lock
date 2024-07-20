@@ -31,8 +31,8 @@ stages:
       nfiles: 2
     - path: mlflow/features.py
       hash: md5
-      md5: 6d0d6e7b9fe6e3daffae8e0dcc1f9587
-      size: 729
+      md5: d5c0e97a8ca1b213ff777db68638057b
+      size: 731
     outs:
     - path: data/processed
       hash: md5
@@ -49,16 +49,16 @@ stages:
       nfiles: 1
     - path: mlflow/modeling/train.py
       hash: md5
-      md5: 53403043cbb537b517410fba0fba7b76
-      size: 3029
+      md5: 34f9bc154d51bc19add9a00769a2a67e
+      size: 4412
     outs:
     - path: models
       hash: md5
-      md5: 7dc8628384f67a5bcac5185302825a05.dir
-      size: 14001
+      md5: 7119cfd6ca54745cf5c565b02afc0b5a.dir
+      size: 21953
       nfiles: 1
   plots:
-    cmd: python3 mlflow/plots.py RandomForestClassifier-model.joblib
+    cmd: python3 mlflow/plots.py
     deps:
     - path: data/interim
       hash: md5
@@ -67,12 +67,12 @@ stages:
       nfiles: 2
     - path: mlflow/plots.py
       hash: md5
-      md5: ce809f94ce3a4b60aa9bf29aaeb4e5ce
-      size: 1410
+      md5: d483b8f5dc17616011de0028cbb4678f
+      size: 1564
     - path: models
       hash: md5
-      md5: 7dc8628384f67a5bcac5185302825a05.dir
-      size: 14001
+      md5: 7119cfd6ca54745cf5c565b02afc0b5a.dir
+      size: 21953
       nfiles: 1
     outs:
     - path: reports/figures

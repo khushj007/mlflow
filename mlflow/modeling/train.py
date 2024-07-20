@@ -17,7 +17,7 @@ def get_data(path):
     return pd.read_csv(path / "train_processed.csv")
 
 
-def best_model(X_train, X_test, y_train, y_test):
+def best_model(X_train, X_test, y_train, y_test,params):
     space = hp.choice('classifier_type', [
         {
             'type': 'RandomForestClassifier',
@@ -63,7 +63,7 @@ def best_model(X_train, X_test, y_train, y_test):
 
             return {"loss":-accuracy,"status":STATUS_OK,"estimator":estimator,"type":type}
         
-        best = fmin(objective,space,tpe.suggest,5,trials=trials)
+        best = fmin(objective,space,tpe.suggest,params["cv"],trials=trials)
 
 
 
@@ -124,13 +124,13 @@ def main():
     models_path = home_dir / "models"
 
 
-    params = yaml.safe_load(open(params_path))["model"]
+    params = yaml.safe_load(open(params_path))["train"]
 
     df = get_data(data_path)
 
     X_train, X_test, y_train, y_test = train_test_split(df.iloc[:,:-1], df.iloc[:,-1], test_size=params["test_split"], random_state=42)
 
-    model , estimator_name = best_model(X_train, X_test, y_train, y_test )
+    model , estimator_name = best_model(X_train, X_test, y_train, y_test,params)
     
     save_model(models_path,model,estimator_name)
 

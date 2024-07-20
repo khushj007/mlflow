@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/636db7c00f8a4aafa37ccd0345087798/artifacts
+end_time: 1721466717556
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 636db7c00f8a4aafa37ccd0345087798
+run_name: unruly-rook-722
+run_uuid: 636db7c00f8a4aafa37ccd0345087798
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466717493
+status: 3
+tags: []
+user_id: HCjoshi

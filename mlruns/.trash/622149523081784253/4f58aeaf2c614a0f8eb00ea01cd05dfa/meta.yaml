@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/4f58aeaf2c614a0f8eb00ea01cd05dfa/artifacts
+deleted_time: 1721466635036
+end_time: 1721466423965
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 4f58aeaf2c614a0f8eb00ea01cd05dfa
+run_name: charming-eel-971
+run_uuid: 4f58aeaf2c614a0f8eb00ea01cd05dfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466423915
+status: 3
+tags: []
+user_id: HCjoshi

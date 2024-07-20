@@ -1,0 +1,7 @@
+artifact_location: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253
+creation_time: 1721465270153
+experiment_id: '622149523081784253'
+last_update_time: 1721466635036
+lifecycle_stage: deleted
+name: best_model-1
+tags: {}

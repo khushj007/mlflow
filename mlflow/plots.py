@@ -7,12 +7,13 @@ import joblib
 import sys
 import mlflow
 import matplotlib.pyplot as plt
+import os
 
 
 def get_data(path):
     return pd.read_csv(path / "test.csv")
 
-def plot_cm(df,model):
+def plot_cm(df,model,filename="default"):
     y_true = df.iloc[:,-1]
     y_pred = model.predict(df.iloc[:,:-1])
     
@@ -28,7 +29,7 @@ def plot_cm(df,model):
 
 
     
-    image_name = sys.argv[1] + 'confusion_matrix.png'
+    image_name = filename + 'confusion_matrix.png'
     save_directory = pathlib.Path(__file__).parent.parent / "reports/figures"
     save_directory.mkdir(parents=True, exist_ok=True)
     save_image_path = save_directory / image_name
@@ -39,18 +40,24 @@ def plot_cm(df,model):
 
 
 def main():
+   
+
     curr_dir = pathlib.Path(__file__)
     home_dir = curr_dir.parent.parent
     data_path = home_dir / "data" / "interim"
     params_path = home_dir / "params.yaml"
-    models_path = home_dir / "models"
 
-    model = joblib.load(models_path / sys.argv[1] )
+    model_directory = home_dir / "models"
+    files = os.listdir(model_directory)
+    model_files = [f for f in files if f.endswith('.joblib')]
+    model_path = os.path.join(model_directory, model_files[0])
+
+    model = joblib.load(model_path)
 
     df = get_data(data_path)
     feature_eng(df)
 
-    plot_cm(df,model)
+    plot_cm(df,model,model_files[0])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/5c019aef293d4d73ba431e9690be2c61/artifacts
+end_time: 1721466716727
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 5c019aef293d4d73ba431e9690be2c61
+run_name: thundering-mink-194
+run_uuid: 5c019aef293d4d73ba431e9690be2c61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466716640
+status: 3
+tags: []
+user_id: HCjoshi

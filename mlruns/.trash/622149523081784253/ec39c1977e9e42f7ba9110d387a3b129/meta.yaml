@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/ec39c1977e9e42f7ba9110d387a3b129/artifacts
+deleted_time: 1721466635036
+end_time: 1721466424593
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: ec39c1977e9e42f7ba9110d387a3b129
+run_name: bright-newt-773
+run_uuid: ec39c1977e9e42f7ba9110d387a3b129
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466422514
+status: 3
+tags: []
+user_id: HCjoshi

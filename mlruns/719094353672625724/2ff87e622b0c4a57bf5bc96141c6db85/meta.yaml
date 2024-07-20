@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/2ff87e622b0c4a57bf5bc96141c6db85/artifacts
+end_time: 1721466717386
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 2ff87e622b0c4a57bf5bc96141c6db85
+run_name: sneaky-moose-318
+run_uuid: 2ff87e622b0c4a57bf5bc96141c6db85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466717356
+status: 3
+tags: []
+user_id: HCjoshi

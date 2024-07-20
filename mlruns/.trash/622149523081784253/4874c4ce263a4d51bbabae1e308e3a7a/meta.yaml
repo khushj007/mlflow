@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/4874c4ce263a4d51bbabae1e308e3a7a/artifacts
+deleted_time: 1721466635036
+end_time: 1721466424434
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 4874c4ce263a4d51bbabae1e308e3a7a
+run_name: wistful-pig-299
+run_uuid: 4874c4ce263a4d51bbabae1e308e3a7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466424381
+status: 3
+tags: []
+user_id: HCjoshi

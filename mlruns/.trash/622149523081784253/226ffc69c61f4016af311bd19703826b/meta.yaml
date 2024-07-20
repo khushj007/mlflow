@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/226ffc69c61f4016af311bd19703826b/artifacts
+deleted_time: 1721466635036
+end_time: 1721465271846
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 226ffc69c61f4016af311bd19703826b
+run_name: masked-newt-332
+run_uuid: 226ffc69c61f4016af311bd19703826b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721465271643
+status: 3
+tags: []
+user_id: HCjoshi

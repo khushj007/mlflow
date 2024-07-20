@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/efb51e4973c84752a63895ba1c38d896/artifacts
+end_time: 1721466717063
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: efb51e4973c84752a63895ba1c38d896
+run_name: marvelous-pig-511
+run_uuid: efb51e4973c84752a63895ba1c38d896
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466716983
+status: 3
+tags: []
+user_id: HCjoshi

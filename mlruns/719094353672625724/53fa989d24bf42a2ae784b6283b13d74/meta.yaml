@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/53fa989d24bf42a2ae784b6283b13d74/artifacts
+end_time: 1721466716853
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 53fa989d24bf42a2ae784b6283b13d74
+run_name: overjoyed-fowl-705
+run_uuid: 53fa989d24bf42a2ae784b6283b13d74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466716735
+status: 3
+tags: []
+user_id: HCjoshi

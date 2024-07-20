@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/77f2467a59df41178b23d3e7a36dfc62/artifacts
+deleted_time: 1721466635036
+end_time: 1721466424317
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 77f2467a59df41178b23d3e7a36dfc62
+run_name: amusing-carp-280
+run_uuid: 77f2467a59df41178b23d3e7a36dfc62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466424264
+status: 3
+tags: []
+user_id: HCjoshi

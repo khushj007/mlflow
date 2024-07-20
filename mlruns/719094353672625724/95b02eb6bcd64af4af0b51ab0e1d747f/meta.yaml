@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/95b02eb6bcd64af4af0b51ab0e1d747f/artifacts
+end_time: 1721466716909
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 95b02eb6bcd64af4af0b51ab0e1d747f
+run_name: marvelous-midge-828
+run_uuid: 95b02eb6bcd64af4af0b51ab0e1d747f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466716862
+status: 3
+tags: []
+user_id: HCjoshi

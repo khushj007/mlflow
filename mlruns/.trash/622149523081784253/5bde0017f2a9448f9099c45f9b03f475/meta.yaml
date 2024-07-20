@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/5bde0017f2a9448f9099c45f9b03f475/artifacts
+deleted_time: 1721466635036
+end_time: 1721465271561
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 5bde0017f2a9448f9099c45f9b03f475
+run_name: nosy-moth-443
+run_uuid: 5bde0017f2a9448f9099c45f9b03f475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721465271527
+status: 3
+tags: []
+user_id: HCjoshi

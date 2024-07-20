@@ -26,7 +26,7 @@ stages:
       - models
 
   plots:
-    cmd: python3 mlflow/plots.py RandomForestClassifier-model.joblib
+    cmd: python3 mlflow/plots.py
     deps:
       - mlflow/plots.py
       - models

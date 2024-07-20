@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/45a227045d4a4f40880e790726008804/artifacts
+deleted_time: 1721466635036
+end_time: 1721466424572
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 45a227045d4a4f40880e790726008804
+run_name: fearless-trout-828
+run_uuid: 45a227045d4a4f40880e790726008804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466424504
+status: 3
+tags: []
+user_id: HCjoshi

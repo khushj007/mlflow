@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/719094353672625724/3288573a29f543f7974332418bc48675/artifacts
+end_time: 1721466717668
+entry_point_name: ''
+experiment_id: '719094353672625724'
+lifecycle_stage: active
+run_id: 3288573a29f543f7974332418bc48675
+run_name: marvelous-vole-341
+run_uuid: 3288573a29f543f7974332418bc48675
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721466717620
+status: 3
+tags: []
+user_id: HCjoshi

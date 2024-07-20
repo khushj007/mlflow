@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/HCjoshi/Desktop/DSMP2.0/MLops/mlflow/mlruns/622149523081784253/1b48ba72fa804a8dafbc462e8db9127d/artifacts
+deleted_time: 1721466635036
+end_time: 1721465271474
+entry_point_name: ''
+experiment_id: '622149523081784253'
+lifecycle_stage: deleted
+run_id: 1b48ba72fa804a8dafbc462e8db9127d
+run_name: invincible-seal-894
+run_uuid: 1b48ba72fa804a8dafbc462e8db9127d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721465271422
+status: 3
+tags: []
+user_id: HCjoshi

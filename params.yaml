@@ -2,3 +2,6 @@ dataset:
   split: 0.3
 model:
   test_split: 0.2
+train:
+  cv: 20
+  test_split: 0.2
