@@ -8,67 +8,103 @@ from sklearn.ensemble import RandomForestClassifier
 import sys
 from sklearn.model_selection import GridSearchCV
 import joblib
+from hyperopt import  hp , fmin, tpe, space_eval ,Trials ,STATUS_OK
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 
 
 def get_data(path):
     return pd.read_csv(path / "train_processed.csv")
 
-def best_model(x , y):
-    hyperparameters = {
-        "RandomForestClassifier": {
-            "n_estimators": [10, 15, 20],
-            "max_depth": [6, 8, 10],
-            "max_features": ["sqrt", "log2", None],
+
+def best_model(X_train, X_test, y_train, y_test):
+    space = hp.choice('classifier_type', [
+        {
+            'type': 'RandomForestClassifier',
+            'n_estimators': hp.quniform('rf_n_estimators', 10, 100, 10),
+            'max_depth': hp.quniform('rf_max_depth', 10, 100, 10),
+            'max_features': hp.choice('rf_max_features', ['sqrt', 'log2', None]),
+            'estimator': RandomForestClassifier
         },
-        "DecisionTreeClassifier": {
-            "criterion": ["gini","entropy"],
-            "max_depth":[6, 8, 10],
-                
-        },
-    }
-        
-    models = {
-        "RandomForestClassifier": RandomForestClassifier,
-        "DecisionTreeClassifier": DecisionTreeClassifier,
+        {
+            'type': 'DecisionTreeClassifier',
+            'criterion': hp.choice('dt_criterion', ['gini', 'entropy']),
+            'max_depth': hp.quniform('dt_max_depth', 10, 60, 10),
+            'estimator': DecisionTreeClassifier
         }
+    ])
+    
+    choice_maps = {
+        'rf_max_features': ['sqrt', 'log2', None],
+        'dt_criterion': ['gini', 'entropy']
+    }
+    
     experiment_name = sys.argv[1]
     mlflow.set_experiment(experiment_name)
-
-    best_model=None
-    best_score=-1
-    estimator_name = None
-    with mlflow.start_run() as parent :
-        for i in hyperparameters:
-            model = GridSearchCV(estimator=models[i](),param_grid=hyperparameters[i],scoring={
-                "accuracy":"accuracy",
-                'f1_macro': 'f1_macro'},
-                refit="f1_macro",
-                cv=10
-                ) 
-            
-            model.fit(x,y)
-            
-            
-            for j in range(len(model.cv_results_["params"])):
-                with mlflow.start_run(nested=True) as child :
-                    mlflow.log_params(model.cv_results_["params"][j])
-                    mlflow.log_metric("f1_score",model.cv_results_["mean_test_f1_macro"][j])
-                    mlflow.log_metric("accuracy",model.cv_results_["mean_test_accuracy"][j])
-                    mlflow.log_param("estimator_name",i)
-
-            
-            
-            
-            if model.best_score_ > best_score :
-                best_model = model.best_estimator_
-                best_score = model.best_score_
-                estimator_name = i
-        mlflow.log_params(model.best_params_)
-        mlflow.log_metric("f1_score",best_score)
-        mlflow.log_metric("accuracy",model.cv_results_["mean_test_accuracy"].max())
-        mlflow.log_param("estimator_name",estimator_name)
     
-    return best_model , estimator_name
+    trials = Trials()
+    with mlflow.start_run() as parent:
+
+
+        def objective(params):
+            type = params.pop("type")
+            estimator = params.pop("estimator")
+
+            if "max_depth" in params :
+                params["max_depth"] = int(params["max_depth"])
+            if "n_estimators" in params :
+                params["n_estimators"] = int(params["n_estimators"])
+
+            model = estimator(**params)
+            model.fit(X_train,y_train)
+            y_pred = model.predict(X_test)
+
+            accuracy = accuracy_score(y_test,y_pred)
+
+            return {"loss":-accuracy,"status":STATUS_OK,"estimator":estimator,"type":type}
+        
+        best = fmin(objective,space,tpe.suggest,5,trials=trials)
+
+
+
+        best_params = {}
+
+        if trials.best_trial["result"]["type"] == "RandomForestClassifier":
+            for k , v in list(best.items())[1:]:
+                if type(v) == int :
+                    best_params[k[3:]] = choice_maps[k][v]
+                else :
+                    best_params[k[3:]] = int(v)
+
+        if trials.best_trial["result"]["type"] == "DecisionTreeClassifier":
+            for k , v in list(best.items())[1:]:
+                if type(v) == int :
+                    best_params[k[3:]] = choice_maps[k][v]
+                else :
+                    best_params[k[3:]] = int(v)
+
+        estimator = trials.best_trial["result"]["estimator"](**best_params)
+        estimator.fit(X_train,y_train)
+
+        for i in trials.trials:
+            with mlflow.start_run(nested=True) as child :
+                mlflow.log_metric("accuracy" ,-i["result"]["loss"])
+                keys_to_remove = [k for k, v in i["misc"]["vals"].items() if not v]
+                for k in keys_to_remove:
+                    del i["misc"]["vals"][k]
+                mlflow.log_params(i["misc"]["vals"])
+                mlflow.log_param("type",i["result"]["type"])
+
+
+        mlflow.log_metric("accuracy" ,-trials.best_trial["result"]["loss"])
+        mlflow.log_params(best_params)
+        mlflow.log_param("type",trials.best_trial["result"]["type"])
+
+    return estimator , trials.best_trial["result"]["type"] 
+        
+
+    
+        
 
 def save_model(path,model,estimator_name):
     pathlib.Path(path).mkdir(parents=True,exist_ok=True)
@@ -92,10 +128,9 @@ def main():
 
     df = get_data(data_path)
 
-    X = df.drop(columns="Species")
-    y = df["Species"]
+    X_train, X_test, y_train, y_test = train_test_split(df.iloc[:,:-1], df.iloc[:,-1], test_size=params["test_split"], random_state=42)
 
-    model , estimator_name = best_model(X,y)
+    model , estimator_name = best_model(X_train, X_test, y_train, y_test )
     
     save_model(models_path,model,estimator_name)
 
